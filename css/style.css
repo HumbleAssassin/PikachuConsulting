@@ -1,0 +1,244 @@
+
+
+body {
+    height: 3000px;
+    font-family: 'Nunito','-apple-system','BlinkMacSystemFont',"Segoe UI", Roboto !important;
+}
+
+.left-blob, .right-blob {
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    z-index: 999;
+}
+
+.bg-light {
+    background: white;
+}
+
+.left-blob {
+    bottom: -30vh;
+    left: -20vw;    
+    transform: rotate(275deg);
+}
+
+.right-blob {
+    top: -50vh;
+    right: -20vw;    
+    transform: rotate(270deg);
+}
+
+.landing {
+    position: relative;
+    height: 100vh;
+    min-height: 350px;
+    overflow: hidden;
+}
+
+.svg svg {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    z-index: 9999;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999999999;
+}
+
+.nav-item {
+    padding: 0 15px;
+    transition: all 300ms linear;
+}
+
+.nav-item:hover {
+    background: #00523C;
+}
+
+.nav-item:hover .nav-link {
+    color: white !important;
+}
+
+.dropdown-menu {
+    background: #007556;
+    border: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.dropdown-item {
+    color: white;
+    font-size: 1rem;
+}
+
+.dropdown-item:hover {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.dropdown .dropdown .dropdown-menu {
+    position: absolute;
+    top: -10%;
+    left: -100%;
+    width: 100%;
+    display: none;
+
+}
+
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.navbar .navbar-brand {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: 900 !important;
+    position: relative;
+    transition: 2s;
+}
+
+.navbar .navbar-brand:before {
+    content: "";
+    position: absolute;
+    height: 60%;
+    width: 80%;
+    border-radius: 50%;
+    background: lightsalmon;
+    transform: skew(45deg) translate(5%, 15%);
+    z-index: -3;
+}
+
+.navbar .navbar-brand .small {
+    font-weight: inherit;
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+
+.navbar-container a {
+    font-size: 1.3rem;
+}
+
+.landing-content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing-content h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.landing-content h4 {
+    font-size: 2rem;
+}
+
+#dynamic {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    height: 3rem;
+}
+
+#dynamic:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    background: #FFE69B;
+    z-index: -99;
+}
+
+.landing-content .btn-success {
+    background: #007556;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#aboutus {
+    background: #192D35;
+    padding: 5rem 0;
+}
+
+#aboutus .aboutus-card {
+    width: 520px;
+    background: rgb(255, 255, 255, 0.05);
+    padding: 36px;
+    border-radius: 10px;
+}
+
+#aboutus .aboutus-card * {
+    font-weight: 700;
+    color: white;
+}
+
+#aboutus .aboutus-card img {
+    height: 40px;
+}
+
+.btn-custom, .btn-custom:hover {
+    background: #01836C !important;
+    color: white;
+}
+
+.btn-custom:hover {
+    box-shadow: 0 1px 3px black;
+}
+
+.video:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 5px 15px black;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    .navbar-light .navbar-nav {
+        background: #007556 !important;
+        color: white;
+        width: 300px;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 360px) {
+    .landing-content h2 {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+    }
+
+    .landing-content h4 {
+        font-size: 1rem;
+    }
+
+    .landing-content #dynamic {
+        font-size: 0.8rem
+    }
+}
