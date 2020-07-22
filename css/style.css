@@ -444,6 +444,11 @@ textarea {
         padding-left: 20px;
     }
 
+    .landing-content #dynamic {
+        font-size: 2.5rem;
+        height: 2.5rem;
+    }
+
 
 }
 
@@ -459,6 +464,7 @@ textarea {
     }
 
     .landing-content #dynamic {
-        font-size: 0.8rem
+        font-size: 1rem;
+        height: 1rem;
     }
 }
