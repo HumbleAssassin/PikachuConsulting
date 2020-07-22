@@ -1,8 +1,25 @@
-
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    height: 3000px;
     font-family: 'Nunito','-apple-system','BlinkMacSystemFont',"Segoe UI", Roboto !important;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a, a:hover, a:visited {
+    color: inherit;
+}
+
+a.btn {
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
 }
 
 .left-blob, .right-blob {
@@ -12,8 +29,13 @@ body {
     z-index: 999;
 }
 
-.bg-light {
+.bg-light-a {
     background: white;
+    color: #2D3134;
+}
+
+.bg-light-a .navbar-nav > .nav-item .nav-link {
+    color: #2D3134 !important;
 }
 
 .left-blob {
@@ -50,13 +72,20 @@ body {
     z-index: 9999999999;
 }
 
-.nav-item {
-    padding: 0 15px;
+.navbar-nav > .nav-item {
     transition: all 300ms linear;
 }
 
-.nav-item:hover {
-    background: #00523C;
+.dropdown-item {
+    color: white !important;
+}
+
+.navbar-nav > .nav-item:hover {
+    background: #007556;
+}
+
+.nav-link .dropdown.show {
+    background: none;
 }
 
 .nav-item:hover .nav-link {
@@ -77,16 +106,7 @@ body {
 
 .dropdown-item:hover {
     background: rgba(0, 0, 0, 0.3);
-    color: white;
-}
-
-.dropdown .dropdown .dropdown-menu {
-    position: absolute;
-    top: -10%;
-    left: -100%;
-    width: 100%;
-    display: none;
-
+    color: white !important;
 }
 
 .dropdown:hover > .dropdown-menu {
@@ -99,17 +119,6 @@ body {
     font-weight: 900 !important;
     position: relative;
     transition: 2s;
-}
-
-.navbar .navbar-brand:before {
-    content: "";
-    position: absolute;
-    height: 60%;
-    width: 80%;
-    border-radius: 50%;
-    background: lightsalmon;
-    transform: skew(45deg) translate(5%, 15%);
-    z-index: -3;
 }
 
 .navbar .navbar-brand .small {
@@ -137,15 +146,16 @@ body {
     text-align: center;
 }
 
-.landing-content h2 {
+.landing-content h2{
     font-size: 3rem;
     line-height: 3rem;
     margin-bottom: 2rem;
     font-weight: 700;
 }
 
-.landing-content h4 {
+.landing-content h4{
     font-size: 2rem;
+    letter-spacing: 1px;
 }
 
 #dynamic {
@@ -171,6 +181,11 @@ body {
     color: white;
     font-size: 1.4rem;
     font-weight: 600;
+    z-index: 99999;
+}
+
+.btn-success:hover {
+    box-shadow: 0 0 3px 1px black;
 }
 
 #aboutus {
@@ -179,9 +194,10 @@ body {
 }
 
 #aboutus .aboutus-card {
-    width: 520px;
+
+    max-width: 520px;
     background: rgb(255, 255, 255, 0.05);
-    padding: 36px;
+    /* padding: 36px; */
     border-radius: 10px;
 }
 
@@ -203,14 +219,218 @@ body {
     box-shadow: 0 1px 3px black;
 }
 
-.video:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 5px 15px black;
+.video {
+    transition: all 100ms linear;
+    perspective: 800px;
+}
+.video iframe {
+    transition: all 200ms linear;
+}
+
+.video:hover iframe{
+    transform: rotateY(-15deg);
+    /* transform-origin: left; */
+    box-shadow: 0 10px 15px black;
+    -webkit-box-reflect: below 0.5px linear-gradient(transparent, transparent, #0002);
+}
+
+.testimonial-box {
+    padding: 4rem 6rem;
+    background: #eee;
+}
+
+.carousel {
+    transition: box-shadow 300ms ease;
+}
+
+.carousel:hover {
+    
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.carousel:hover .testimonial-box{
+    background: #bbb;
+    color: white;    
+}
+
+.carousel-control-prev, .carousel-control-next{
+    font-size: 2vmax;
+    color: #2D3134;
+}
+
+.carousel-control-prev:focus, .carousel-control-next:focus {
+    color: inherit;
+}
+
+footer {
+    background: #192D35;
+    color: white;
 }
 
 
+footer ul li {
+    margin-left: 10px;
+}
+
+footer h4, footer h5 {
+    user-select: none;
+    border-bottom: 1px solid white;
+}
 
 
+/* About Us Styling below this */
+
+.bg-aboutus {
+    background: linear-gradient(rgb(25, 45, 53, 0.97), rgb(25, 45, 53, 0.97)), url("../assets/images/men-1979261_1920.jpg");
+    color: white;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+}
+
+.landing.bg-aboutus {
+    height: 80vh;
+}
+
+
+.bg-light-a .navbar-brand {
+    color: #2D3134 !important;
+}
+
+.bg-aboutus nav .nav-link {
+    color: White !important;
+}
+
+#mission .fa {
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+.bg-red {
+    background: rgb(97, 4, 4);
+}
+
+.bg-blue {
+    background: rgb(5, 5, 107);
+}
+#vision-mision-goal {
+    border-top: 4px solid goldenrod;
+}
+
+.landing-content img {
+    max-width: 100px;
+    width: 15%;
+}
+
+.team .cards {
+    width: 370px;
+    height: 260px;
+    position: relative;
+    overflow: hidden;
+}
+
+.team .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.team .cards:hover .overlay {
+    display: block;
+}
+
+.team .cards img {
+    transition: transform 500ms ease-in-out;
+}
+
+.team .cards:hover img {
+    transform: scale(1.1);
+}
+
+.team img {
+    width: 100%;
+    height: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* About us styling above this */
+/* Contact styling below this */
+.bg-contact {
+    background: linear-gradient(rgb(25, 45, 53, 0.97), rgb(25, 45, 53, 0.97)), url("../assets/images/students_globe.jpg");
+    color: white;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+}
+
+.landing.bg-contact {
+    height: 100vh;
+}
+
+.bg-contact nav .nav-link {
+    color: White !important;
+}
+
+.bg-contact .landing-content .fa {
+    font-size: 3vmax;
+    animation: 1s ease-out infinite down; 
+}
+
+@keyframes down {
+    45% {
+        transform: translateY(20px);
+    }
+}
+
+textarea {
+    resize: none;
+    height: 120px !important;
+}
+/* contact styling above this */
+
+
+
+
+
+/* Go to top style below*/
+
+.go-to-top {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    background: #FFE69B;
+    text-align: center;
+    border-radius: 50%;
+    transition: box-shadow 300ms;
+    transition-delay: 50ms;
+    display: none;
+}
+
+.go-to-top:hover {
+    box-shadow: 0 0 5px 0 #01836C, 0 0 10px 3px rgba(1, 131, 108, 0.1);
+}
+
+.go-to-top .fa {
+    line-height: 50px;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.go-to-top:hover .fa {
+    filter: 0 0 5px rgba(1, 131, 108, 0.2);
+    color: #01836C;
+}
+
+/* Go to top style above this */
 
 
 
@@ -219,7 +439,7 @@ body {
     .navbar-light .navbar-nav {
         background: #007556 !important;
         color: white;
-        width: 300px;
+        /*width: 300px;*/
         text-align: left;
         padding-left: 20px;
     }

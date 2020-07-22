@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootnavbar.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
   </head>
@@ -24,34 +25,31 @@
         </svg>
       </div>
       <div class="navbar-container">
-        <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light mainmenu">
-            <a class="navbar-brand d-none d-sm-block" href="#"><span>Pikachu</span><br><span class="small">Consulting</span></a>
+        <div class="container-md">
+          <nav class="navbar navbar-expand-lg navbar-light mainmenu" id="bootnavbar">
+            <a class="navbar-brand d-none d-sm-block" href="index.html"><span>Pikachu</span><br><span class="small">Consulting</span></a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           
-            <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#"> <i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link px-3" href="index.html"> <i class="fa fa-home"></i> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Our Services
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="#">Consultation</a></li>
                     <li><a class="dropdown-item" href="#">University Selection</a></li>
                     <li><a class="dropdown-item" href="#">Visa Processing</a></li>
-                    <li class="dropdown">
-                      <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Test Preparation
-                    </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="nav-item dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Test Preparation
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                         <a class="dropdown-item" href="#">TOEFL</a>
                         <a class="dropdown-item" href="#">IELTS</a>
                         <a class="dropdown-item" href="#">SAT</a>
@@ -61,26 +59,31 @@
                     </li>
                   </ul>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link px-3" href="#aboutus">About Us</a>
+                </li>
               </ul>
             </div>
           </nav>
         </div>
       </div>
-      <div class="landing-content">
+      <div class="landing-content pb-5">
         <h2>A division group of <br> Charizard and Charizard Co</h2>
         <h4>And Leading company for</h4>
         <h4 id="dynamic"> </h4>
-        <a href="" class="btn btn-success px-5 py-3 mt-5 rounded-pill">Contact Us</a>
+        <a href="contact.html" class="btn btn-success px-5 py-2 my-5 rounded-pill" role="button">Contact Us</a>
       </div>
       <div class="svg d-none d-md-block">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#192D35" fill-opacity="1" d="M0,96L120,128C240,160,480,224,720,218.7C960,213,1200,139,1320,101.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
       </div>
     </div>
+
       <section id="aboutus">
         <div class="container">
+          <h3 class="text-center text-white">Our Strengths you might be interested to know</h3>
           <div class="wow animate__fadeInUp" data-wow-duration="1s">
             <div class="d-flex flex-column flex-md-row flex-wrap">
-              <div class="aboutus-card m-3">
+              <div class="aboutus-card my-md-3 mb-3 mx-auto p-3 p-md-5">
                 <div class="d-flex">
                   <div class="mr-4">
                     <img src="assets/images/target.png" alt="">
@@ -88,11 +91,10 @@
                   <div>
                     <h5>Methods that focuses on goal</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel inventore veritatis porro repudiandae excepturi quae exercitationem illum temporibus tempore incidunt.</p>
-                    <a href="" class="btn btn-custom px-4 py-2 rounded-pill" role="button">View Details</a>
                   </div>
                 </div>
               </div>
-              <div class="aboutus-card m-3">
+              <div class="aboutus-card my-md-3 mb-3 mx-auto  p-md-5">
                 <div class="d-flex">
                   <div class="mr-4">
                     <img src="assets/images/idea.png" alt="">
@@ -100,11 +102,10 @@
                   <div>
                     <h5>Cracking international tests easy</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel inventore veritatis porro repudiandae excepturi quae exercitationem illum temporibus tempore incidunt.</p>
-                    <a href="" class="btn btn-custom px-4 py-2 rounded-pill" role="button">View Details</a>
                   </div>
                 </div>
               </div>
-              <div class="aboutus-card m-3">
+              <div class="aboutus-card my-md-3 mb-3 mx-auto p-md-5">
                 <div class="d-flex">
                   <div class="mr-4">
                     <img src="assets/images/internet.png" alt="">
@@ -112,30 +113,32 @@
                   <div>
                     <h5>Placement in Worldwide Universities</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel inventore veritatis porro repudiandae excepturi quae exercitationem illum temporibus tempore incidunt.</p>
-                    <a href="" class="btn btn-custom px-4 py-2 rounded-pill" role="button">View Details</a>
                   </div>
                 </div>
               </div>
-              <div class="aboutus-card m-3">
+              <div class="aboutus-card my-md-3 mb-3 mx-auto p-md-5">
                 <div class="d-flex">
                   <div class="mr-4">
                     <img src="assets/images/3d-design.png" alt="">
                   </div>
                   <div>
-                    <h5>Methods that focuses on goal</h5>
+                    <h5>Shaping up careers</h5>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel inventore veritatis porro repudiandae excepturi quae exercitationem illum temporibus tempore incidunt.</p>
-                    <a href="" class="btn btn-custom px-4 py-2 rounded-pill" role="button">View Details</a>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="text-center pt-5">
+              <a href="aboutus.html" class="btn btn-custom px-4 py-2 rounded-pill" role="button">View Details</a>
+            </div>
           </div>
         </div>
       </section>
-      <section class="team-section p-md-5">
+
+      <section id="video-gallery">
         <div class="container">
-            <div class=" text-center">
-                <h3>Our Successive Videos</h3>
+            <div class="mt-5 text-center">
+                <h3>Our Video Gallery</h3>
             </div>
             <div class="title-text text-center my-5">
                 <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta consequatur adipisci doloremque!</span>
@@ -157,12 +160,93 @@
                   </div>
               </div>
             </div>
-              <div class="my-5 mx-2">
-                <a href="#" class="btn btn-custom py-2 px-4" role="button"> View More <i class="fa fa-long-arrow-right"></i></a>
+              <div class="my-5 mx-2 text-center">
+                <a href="gallery.html" class="btn btn-custom py-2 px-4" role="button"> View More <i class="fa fa-caret-right"></i></a>
               <div> 
         </div>
     </section>
-    
+    <hr>
+    <section id="testimonial" pt-5>
+      <div class="container text-center mt-5">
+        <h3>Customers Feedback</h3>
+        <p class="px-md-5 mt-4 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quaerat earum nulla sit sapiente vitae. Dolores asperiores doloribus cumque quo laboriosam dolore, tenetur culpa est sunt labore magnam.</p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonial-box text-center d-block w-100">
+                <h4 class="mb-3">Choosing Pikachu was my best Decision.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum laboriosam dolores vero numquam ipsum enim maxime aut, quasi commodi impedit, incidunt, quidem modi sequi fuga nobis repellat facere praesentium similique nam in?</p>
+                <span><i class="fa fa-twitter text-primary"></i> JuneRoy Torremocha <br>Philippines</span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-box text-center d-block w-100">
+                <h4 class="mb-3">The best consultancy.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum laboriosam dolores vero numquam ipsum enim maxime aut, quasi commodi impedit, incidunt, quidem modi sequi fuga nobis repellat facere praesentium similique nam in?</p>
+                <span><i class="fa fa-twitter text-primary"></i> Rajan Kafle <br>Birgunj</span>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonial-box text-center d-block w-100">
+                <h4 class="mb-3">Pikachu is behind whatever I am now.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum laboriosam dolores vero numquam ipsum enim maxime aut, quasi commodi impedit, incidunt, quidem modi sequi fuga nobis repellat facere praesentium similique nam in?</p>
+                <span><i class="fa fa-facebook-square text-primary"></i> Chetan Adhikari <br>Kathmandu</span>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div class="d-none d-md-block">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#192D35" fill-opacity="1" d="M0,96L120,128C240,160,480,224,720,218.7C960,213,1200,139,1320,101.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+    </div>
+    <footer>
+      <div class="container-xl">
+        <div class="d-flex flex-column flex-lg-row justify-content-around">
+          <div class="footer-item mb-4 mt-0">
+            <h4 class="d-none d-sm-block" href="#"><span>Pikachu</span><br><span class="small pl-3">Consulting</span></h4>
+            <p>Lorem ipsum dolor sit amet consectetur, <br>adipisicing elit. Nisi ratione accusamus <br> eligendi similique nam. Voluptate!</p>
+            <a href="callto:123123123"><i class="fa fa-phone"></i> : 123123123</a> <br>
+            <a href="mailto:gottacatchem@ll.com"><i class="fa fa-envelope-o"></i> gottacatchem@ll.com</a>
+          </div>
+          <div class="footer-item my-4">
+            <h5>
+              Quick Links
+            </h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Second Link 2</a></li>
+              <li><a href="#">3<sup>rd</sup> Link</a></li>
+              <li><a href="#">link<sub>4</sub></a></li>
+              <li><a href="#">link 5</a></li>
+              <li><a href="#">link 6</a></li>
+            </ul>
+          </div>
+          <div class="footer-item my-3">
+            <h5>
+              Our Address
+            </h5>
+            <address>
+              Lorem, ipsum dolor sit amet <br>consectetur adipisicing elit. Earum <br> maxime dolore molestias <br>voluptate laboriosam, voluptatibus<br>tempore sed natus pariatur.
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="go-to-top"><i class="fa fa-angle-up"></i></div>
       
 
 
@@ -174,6 +258,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@latest/lib/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/bootnavbar.js"></script>
     <script src="js/main.js"></script>
               <script>
                     var typed =new Typed('#dynamic', {
@@ -190,6 +275,11 @@
               </script>
               <script>
                 new WOW().init();
+              </script>
+              <script>
+                $(function(){
+                  $("#bootnavbar").bootnavbar();
+                  });
               </script>
 </body>
 </html>
