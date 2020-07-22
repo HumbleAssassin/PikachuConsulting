@@ -395,8 +395,20 @@ textarea {
 }
 /* contact styling above this */
 
+/* Gallery style below this */
 
+#image-gallery .image{
+    width: 100%;
+    height: 260px;
+}
+#image-gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
+/* Gallery style above this */
 
 
 /* Go to top style below*/
