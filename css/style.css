@@ -427,6 +427,7 @@ textarea {
     border-radius: 50%;
     transition: box-shadow 300ms;
     transition-delay: 50ms;
+    z-index: 9999999999;
     display: none;
 }
 
