@@ -113,6 +113,10 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
+.dropdown-item:focus {
+    background: #007556 !important;
+}
+
 .navbar .navbar-brand {
     font-size: 2rem;
     line-height: 1.5rem;
@@ -243,8 +247,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: box-shadow 300ms ease;
 }
 
-.carousel:hover {
-    
+.carousel:hover {    
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
 }
 
