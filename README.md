@@ -1,1 +1,1 @@
-<a href="https://github.com/HumbleAssassin/PikachuConsulting">PikachuConsulting</a>
+<a href="https://HumbleAssassin.github.io/PikachuConsulting">PikachuConsulting</a>
